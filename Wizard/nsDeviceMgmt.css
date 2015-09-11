@@ -1,0 +1,414 @@
+/*
+ * nGenius UI Device Management
+ *
+ * Copyright © 2012 NetScout Systems Inc.
+ * All rights reserved.
+ */
+
+body { color: white; background-color: black; }
+
+/* Remove margins from the 'html' and 'body' tags, and ensure the page takes up full screen height */
+html,body { height: 100%; margin: 0; padding: 0; }
+
+#content { position: relative; z-index: 1; }
+/* nGenius UI general styles */
+#maincontent { width: 100%; height: 100%; }
+.empty-tab { height: 300px; }
+.ns-button { width: 65px; }
+.master-detail-horizontal-gap {
+	margin-left: 10px;
+	border-top: 0px;
+	border-left: 1px solid #757575;
+	border-bottom: 0px;
+	border-right: 0px;
+	padding: 0px;
+}
+
+/* jQuery UI overrides */
+#tabs-DeviceMgmt { padding: 0px; }
+#tabs-DeviceMgmt-1 { padding: 0px; }
+#tabs-DeviceMgmt-2 { padding: 0px; }
+#tabs-DeviceMgmt-3 { padding: 0px; }
+#tabs-DeviceMgmt-4 { padding: 0px; }
+#tabs-DeviceMgmt-5 { padding: 0px; }
+#tabs-DeviceMgmt-6 { padding: 0px; }
+#tabs-DeviceMgmt-7 { padding: 0px; }
+#tabs-DeviceMgmt-8 { padding: 0px; }
+#tabs-DeviceMgmt-9 { padding: 0px; }
+#tabs-DeviceMgmt-10 { padding: 0px; }
+#tabs-DeviceMgmt-11 { padding: 0px; }
+#tabs-DeviceMgmt-12 { padding: 0px; }
+#tabs-DeviceMgmt-13 { padding: 0px; }
+#tabs-DeviceMgmt-14 { padding: 0px; }
+#tabs-DeviceMgmt-15 { padding: 0px; }
+#tabs-DeviceMgmt-16 { padding: 0px; }
+#tabs-DeviceMgmt-17 { padding: 0px; }
+#tabs-DeviceMgmtGroups { padding: 0px; }
+#tabs-DeviceMgmtGroups-1 { padding: 0px; }
+#tabs-DeviceMgmtGroups-2 { padding: 0px; }
+#tabs-DeviceMgmtGroups-3 { padding: 0px; }
+#tabs-DeviceMgmtEnterprise { padding: 0px; }
+#tabs-DeviceMgmtEnterprise-1 { padding: 0px; }
+#tabs-DeviceMgmtEnterprise-2 { padding: 0px; }
+#tabs-DeviceMgmtEnterprise-3 { padding: 0px; }
+#tabs-DeviceMgmtEnterprise-4 { padding: 0px; }
+#tabs-DeviceMgmtEnterprise-5 { padding: 0px; } 
+#tabs-DeviceMgmtLocations { padding: 0px; }
+#tabs-DeviceMgmtLocations-1 { padding: 0px; }
+#tabs-DeviceMgmtLocations-2 { padding: 0px; }
+#tabs-DeviceMgmtLocations-3 { padding: 0px; }
+#tabs-DeviceMgmtLocations-4 { padding: 0px; }
+#tabs-DeviceMgmtLocations-5 { padding: 0px; }
+#tabs-DeviceMgmtLocations-6 { padding: 0px; }
+#tabs-DeviceMgmtLocations-7 { padding: 0px; }
+.ui-tabs .ui-tabs-nav { padding: 0; }
+#tabs-upgrade { padding: 0px; }
+#tabs-upgrade-1 { padding: 0px; }
+#tabs-upgrade-2 { padding: 0px; }
+#tabs-ssl { padding: 0px; }
+#tabs-ssl-1 { padding: 0px; }
+#tabs-ssl-2 { padding: 0px; }
+#tabs-voiceAndVideo { padding: 0px; }
+#tabs-voiceAndVideo-1 { padding: 0px; }
+#tabs-voiceAndVideo-2 { padding: 0px; }
+#container-audioVideo { padding: 10px; }
+#tabs-audioVideo { padding: 0px; }
+#tabs-audioVideo-1 { padding: 0px; }
+#tabs-audioVideo-2 { padding: 0px; }
+#tabs-DeviceMgmtVoiceVideo { padding: 0px; }
+#tabs-DeviceMgmtVoiceVideo-1 { padding: 0px; }
+#tabs-DeviceMgmtVoiceVideo-2 { padding: 0px; }
+#tabs-DeviceMgmtVoiceVideo-3 { padding: 0px; }
+#tabs-voiceVideoEndpoint { padding: 0px; }
+#tabs-voiceVideoEndpoint-1 { padding: 0px; }
+#tabs-voiceVideoEndpoint-2 { padding: 0px; }
+#tabs-voiceVideoProcessing { padding: 0px; }
+#tabs-voiceVideoProcessing-1 { padding: 0px; }
+#tabs-voiceVideoProcessing-2 { padding: 0px; }
+
+/* Button Bar */
+.ui-ns-button-bar {
+	background-color: #d0d0d0 !important;
+}
+#tpDockedTable {
+	font-family: Verdana,Arial,sans-serif; font-size: 0.7em;
+	color: #000000;
+}
+
+/* nGenius UI Task Progress */
+.ui-dialog { padding: 0; }
+.ui-dialog .ui-dialog-content { padding: 0; }
+.ui-dialog .ui-dialog-buttonpane { border-width: 0; margin: 0; }
+.ui-dialog-progress-leftbuttons { float: left; }
+
+.ui-apply-cancel  {
+	width: 70px;
+}
+
+/*.ui-button.ui-widget {
+	width: 70px;
+}*/
+
+.ui-icon-ns-arrow_expanded {
+	background-image: url('/common/assets/icons/arrow_expanded.png') !important;
+	background-position: 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.ui-icon-ns-arrow_collapsed {
+	background-image: url(/common/assets/icons/arrow_collapsed.png) !important;
+	background-position: 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.ui-spacer-icon {
+	width: 16px;
+	height: 16px;
+	background-image: url('/common/assets/icons/spacer.png') !important;
+}
+
+.ui-icon-tab-left {
+	display: block;
+	cursor: default;
+	background-repeat: no-repeat;
+	margin-left: 4px;
+}
+
+/* .ui-state-focus { */
+/*     border: 1px solid #e5be73 !important; */
+/* } */
+
+.nowrap {
+	white-space: nowrap !important;
+}
+
+.grps-label {
+	padding-bottom: 10px;
+}
+
+.frmLbl {
+	display: block;
+	text-align: left;
+	width: 80%;
+	float: left;
+}
+
+.em {
+	position: absolute;
+	margin: 0.75em 0 0 -11px;
+}
+.atrisk {
+	position: absolute;
+	left: 138px;
+	padding-top: 10px;
+}
+
+/* used by Groups */
+.ui-form-input {margin-bottom:12px; width:80%; padding: .4em;}
+.ui-form-input-combo {margin-bottom:12px; width:84%; padding: .4em;}
+.ui-form-input.error {border: 1px groove black;}
+.ui-form-input-combowithoutlength {margin-bottom:12px; padding: .4em;}
+
+/* validation bubble tips */
+.ui-tooltip-red2 .ui-tooltip-titlebar,
+.ui-tooltip-red2 .ui-tooltip-content{
+	color: black;
+/* 	background-color: #ffeded; */
+	background-color: #fffff5;
+	font-family: Verdana, Arial, sans-serif;
+/* 	border-color: #f14b00; */
+	border-color: #aaaaaa;
+	border-width: 1px;
+}
+
+
+/* Make readonly fields look disabled */
+input[readonly], textarea[readonly] {
+    color: #A0A0A0; /* If this is too light, IE won't highlight properly! */
+    border-color: #A0A0A0;
+}
+
+/* Align dialog buttons to the right (to allow left-aligned buttons) */
+.ui-dialog-buttonset {
+	width: 100%;
+	text-align: right;
+}
+
+/* Left align buttons. Tag names required for specificity */
+div.ui-dialog-buttonset button.leftButton {
+	float: left;
+	margin-left: 10px;
+}
+
+/* ADM Services Tab */
+div#admServicesContents {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+div#admHierarchyWrapper {
+	float: left;
+	width: 25%;
+	height: 100%;
+	border: 1px solid black;
+}
+
+.nsTableContainer {
+	border-top: 0px;
+	border-left: 1px solid #757575;
+	border-bottom: 1px solid #757575;
+	border-right: 1px solid #757575;
+	padding: 0px;
+}
+
+.nsTableRightContainer {
+	border-top: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-right: 1px solid #757575;
+	padding: 0px;
+}
+
+.nsTableLeftContainer {
+	border-top: 0px;
+	border-left: 1px solid #757575;
+	border-bottom: 0px;
+	border-right: 0px;
+	padding: 0px;
+}
+
+.nsTableContainerFull {
+	border-top: 1px solid #757575;
+	border-left: 1px solid #757575;
+	border-bottom: 1px solid #757575;
+	border-right: 1px solid #757575;
+	padding: 0px;
+}
+
+div#admServiceWrapper {
+	float: right;
+	width: 74%;
+	height: 100%;
+	border: 1px solid black;
+}
+
+.ui-titlebar {
+	font-weight: bold;
+	background-color: gray;
+	padding: 5px;
+}
+
+.divSpacer {
+	padding: 10px 30px;
+}
+
+/* for hiding close button on dialog; add dialogClass */
+.no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+
+.ui-icon-ns-loading {
+	background: url(../../common/assets/icons/ajax-loader.gif);
+	background-repeat: no-repeat;
+	height: 32px;
+	background-position: center;
+}
+
+td.vs_definitions_col {
+        white-space: normal !important;
+        height:auto;
+        vertical-align:text-top;
+        padding-top:2px;
+        word-wrap: break-word; // IE 5.5+ and CSS3
+        white-space: pre-wrap; // CSS3
+        white-space: -moz-pre-wrap; // Mozilla, since 1999
+        white-space: -pre-wrap; // Opera 4-6
+        white-space: -o-pre-wrap; // Opera 7
+        overflow: hidden;
+        vertical-align: middle;
+        padding-top: 3px;
+        padding-bottom: 3px
+}
+
+legend {
+	font-weight: normal;
+}
+.inductive-content {
+	padding: 0px 0px 0px 0px;
+	width: 565px;
+	float: left;
+}
+.help-image-sidebar {
+	float: right;
+	width: 15px;
+	padding: 10px 0px 0px 0px;
+	text-align:right;
+}
+
+/* Traffic Discovery style for selected rows
+.ui-jqgrid-trafdisc .ui-state-highlight { 
+	background: #a1d8f1 !important;
+}*/
+table#gsDiscoveryTable tr.ui-state-highlight {
+	background: #a1d8f1 !important
+}
+table#gsDiscoveryTable td.ui-state-highlight {
+	background: #a1d8f1 !important
+}
+
+
+/*Wizard*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#LoginScreen{
+    margin: -10px;
+    padding: -10px;
+    border-top: solid 1px;
+    height: 570px;
+    width: 100%;
+}
+#LoginLeft{
+    width: 19%;
+    height: 570px;
+    float: left;
+    border-right: solid 1px;
+}
+#LoginRight{
+    width: 80%;
+    height: 570px;
+    float: left;
+}
+#platform{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 80%;
+    height: 30%;
+}
+#device{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 80%;
+    height: 30%;
+}
+#LoginInput{
+    margin-top: 35px;
+    margin-left: 150px;
+    width: 60%;
+}
+.LoginInputItem{
+    width: 400px;
+    font-size: 15px;
+    float:left;
+}
+
+.BrowseFile{
+    width: 250px;
+    float: left;
+}
+#LoginNext{
+    background-color: #1F2A2D;
+    width: 70px;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+#VMwareConfigLeft{
+    height: 530px;
+    width: 24%;
+    float: left;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+}
+#VMwareConfigRight{
+    height: 530px;
+    width: 75%;
+    float: left;
+    border-bottom: solid 1px;
+}
+#VMwareConfigLeftUp{
+    width: 100%;
+    border-bottom: solid 1px;
+}
+#VMwareConfigLeftBot{
+    width: 100%;
+}
+.VMwareInputItem{
+    font-size: 12px;
+    float: left;
+}
+.AddConfig{
+    background-color: #396995;
+    color: white;
+    margin-left: 20px;
+    margin-top: 12px;
+    float: left;
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var temp = document.getElementById("ManagementNetwork");
+        var MgntOptionNum = temp.selectedIndex;
+    </script>
+</head>
+<body>
+    <fieldset style="margin-top: 10px; margin-left: 10px; margin-right: 10px; height: 485px; padding-left: 20px;">
+        <legend style="font-size: 12px; color: #396995"><h3 id="legendTitle"></h3></legend>
+        <p class="VMwareInputItem">Management Network: &nbsp;<select id="ManagementNetwork" style="width: 250px;" name="ManagementNetwork" value="" ></select></p>
+        <p style="float: left; margin-top: -7px; margin-left: 140px;"><input type="checkbox">Use same management network for all</p>
+        <p class="VMwareInputItem">Monitor vSwitches: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="MonitorvSwitches" style="width: 250px;" name="Monitor vSwitches" value="" ></select></p>
+        <button id="addvSwitches" class="AddConfig">Add</button></br>
+        <p class="VMwareInputItem">Monitor VMs on VDS: &nbsp;&nbsp;&nbsp;&nbsp;<select id="MonitorVMsonVDS" style="width: 250px;" name="Monitor VMs on VDS" value="" ></select></p>
+        <button id="addVMSonVDS" class="AddConfig">Add</button></br>
+        <p class="VMwareInputItem">Datastore: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="Datastore" style="width: 250px;" name="Datastore" value="" ></select></p>
+        <p class="VMwareInputItem">vSwitch VLAN ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 250px;" type="text" id="vSwitch_VLAN_ID" name="vSwitch VLAN ID" value="" oninput="UpgradeWizard.updateConfigData('same','same'),UpgradeWizard.checkVLANID()"></p>
+        <p class="VMwareInputItem">VDS VLAN: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 250px;" type="text" id="VDS_VLAN" name="VDS VLAN" value="" oninput="UpgradeWizard.updateConfigData('same','same'),UpgradeWizard.checkVDSVLAN('config')"></p>
+        <div style="border: solid 1px #396995; float: left;"><table id="VMwareConfigRightTable"></table></div>
+    </fieldset>
+</body>
+</html>

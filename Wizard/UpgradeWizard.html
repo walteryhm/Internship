@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+
+    <script>
+
+    </script>
+
+</head>
+<body>
+<!--LoginScreen-->
+    <div id="LoginScreen">
+        <div id="LoginLeft">
+            <div id="platform">
+                <h2 style="color: #386894">Platform:</h2>
+                <input type="radio" class="platformChoice" name="platformChoice" value="VMware" checked="checked">VMware</br></br>
+                <input type="radio" class="platformChoice" name="platformChoice" value="KVM">KVM</br></br>
+                <input type="radio" class="platformChoice" name="platformChoice" value="OpenStack">OpenStack</br></br>
+            </div>
+            <div id="device">
+                <h2 style="color: #386894">Device:</h2>
+                <input type="radio" class="deviceChoice" name="deviceChoice" value="VI2000" checked="checked">VI2000</br></br>
+            </div>
+        </div>
+        <div id="LoginRight">
+            <div id="LoginInput">
+                <h1>Login Screen</h1>
+                <div style="border:1px solid; margin-bottom: 20px; "></div>
+                <p style="width: 700px;"><span class="LoginInputItem">Config File: &nbsp;<input size="30px" type="text" id="ConfigFile" name="ConfigFile" value="" readonly="readonly"></span>
+                <span class="BrowseFile"><input id="uploadConfigFile" type="file" name="uploadConfigFile" style="color: transparent; "></span></p></br></br></br>
+                <p style="width: 700px;"><span class="LoginInputItem">Template: &nbsp;&nbsp;<input size="30px" type="text" id="Template" name="Template" value="" readonly="readonly"></span></p></br></br></br>
+                <p class="LoginInputItem">Server(s): &nbsp;&nbsp;<input size="30px" type="text" id="Server" name="Server(s)" value="" readonly="readonly"></p>
+                <p class="LoginInputItem">Username: &nbsp;<input size="30px" type="text" id="Username" name="Username" value="" ></p>
+                <p class="LoginInputItem">Password: &nbsp;&nbsp;<input size="30px" type="password" id="Password" name="Password" value="" ></p>
+                <p id="authentication" style="float: left;"><input  type="checkbox">Use same authentication for all</p>
+                <p style="width: 600px; float: left;"><button id="LoginNext">Next</button></p>
+            </div>
+
+            <div id="dialog-deployWizard" style="display:none;">
+                <p id="dlgApplyWInfo" class="inductiveText"></p>
+                <div class="ui-icon-ns-loading"></div>
+            </div>
+        </div>
+    </div>
+
+<!--VMware Select hosts-->
+    <div id="VMwareSelectDialog" style="display: none;">
+        <table id="VMwareSelectTable"></table>
+    </div>
+
+<!--VMware Config Machine-->
+    <div id="VMwareConfigDialog" style="display: none;">
+        <div id="VMwareConfigLeft">
+            <div id="VMwareConfigLeftUp"></div>
+            <div id="VMwareConfigLeftBot">
+                <table id="VMwareConfigLeftTable">
+
+                </table>
+            </div>
+        </div>
+        <div id="VMwareConfigRight">
+        </div>
+    </div>
+
+<!--VMware remirroring-->
+
+</body>
+</html>
