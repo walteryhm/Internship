@@ -1,0 +1,113 @@
+        body{
+            margin:0px;
+        }
+        #main_div{
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            border: solid 1px;
+            background-color: black;
+            height: 10%;
+            width: 100%;
+        }
+        .title{
+            margin-top: -5px;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-family: fantasy;
+        }
+        .section1{
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 10%;
+            width: 80%;
+        }
+        #dropdownlist{
+        	cursor:pointer;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 15px;
+            float:left;
+            font-size: 15px;
+            border-radius: 5px;
+            width: 450px;
+            height: 30px;
+        }
+        .view{
+
+        	cursor:pointer;
+            margin-left: 80px;
+            margin-top: 15px;
+            float:left;
+            font-size: 15px;
+            border-radius: 8px;
+            background-color: #4D6BA6;
+            color: white;
+            width: 60px;
+            height: 35px;
+        }
+        .view:hover{
+        	cursor:pointer;
+            margin-left: 80px;
+            margin-top: 15px;
+            float:left;
+            font-size: 15px;
+            border-radius: 8px;
+            background-color: #33486F;
+            color: white;
+            width: 60px;
+            height: 35px;
+        }
+        .section2{
+            margin-top: -20px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 55%;
+            width: 80%;
+        }
+        .table{
+            float: left;
+            overflow:scroll;
+            max-height: 100%;
+            width: 800px;
+        }
+        .hover{
+        	background-color: #EAEAEA;
+        }
+        th{
+        	color: #396995;
+        	font-size: 20px;
+        	background-color: #E1E1E1;
+            cursor: pointer; 
+        }
+        .table_name{
+        	font-size: 20px;
+        	float: left;
+        	color: #396995;
+        }
+        .table_content{
+            margin-left: -105px;
+            margin-right: 637px;
+            float: left;
+        	font-size: 20px;
+        	color: #396995;
+        }
+        .section3{
+            float: left;
+            margin-left: auto;
+            margin-right: auto;
+            height: 10%;
+            width: 80%;
+        }
+        .filterName{
+            width: 100%;
+            display: none;
+        }
+        .choose{
+            background-color: #7BCAEC;
+        }
+        
+       
